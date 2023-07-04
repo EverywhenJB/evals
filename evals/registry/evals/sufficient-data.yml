@@ -1,0 +1,8 @@
+sufficient-data:
+  id: sufficient-data.dev.v0
+  description: Test the model's ability to determine if enough data is given to correctly answer a question.
+  metrics: [accuracy]
+sufficient-data.dev.v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: sufficient-data/samples.jsonl
